@@ -1,4 +1,4 @@
-# demo
+# Meals
 
 A new Flutter project.
 
