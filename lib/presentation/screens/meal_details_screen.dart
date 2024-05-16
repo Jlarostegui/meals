@@ -1,7 +1,6 @@
 import 'package:demo/domain/Models/models.dart';
 import 'package:demo/providers/favovite_meals_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class MealDetailsScreen extends ConsumerWidget {
@@ -79,8 +78,10 @@ class MealDetailsScreen extends ConsumerWidget {
             for (final ingridient in meal.ingredients)
               Text(
                 ingridient,
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: Theme.of(context).colorScheme.onBackground),
+                style: Theme.of(context)
+                    .textTheme
+                    .bodyMedium
+                    ?.copyWith(color: Theme.of(context).colorScheme.onSurface),
               ),
             const SizedBox(
               height: 24,
@@ -102,7 +103,7 @@ class MealDetailsScreen extends ConsumerWidget {
                 child: Text(
                   step,
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: Theme.of(context).colorScheme.onBackground),
+                      color: Theme.of(context).colorScheme.onSurface),
                   textAlign: TextAlign.center,
                 ),
               ),
